@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="Fabio 2172014" />
+    <title>Document</title>
+  </head>
+  <style>
+    table {
+      border: solid black;
+    }
+  </style>
+  <body>
+    <script>
+      const namaorang = ["a"];
+      while (true) {
+        let nama = prompt("Masukkan nama");
+        let warna = prompt("Masukkan warna kesukaan(english)");
+        if (nama == "stop") {
+          break;
+        }
+        nama = prompt("Masukkan nama");
+        warna = prompt("Masukkan warna kesukaan(english)");
+      }
+      document.write(
+        "<table><tr><td>Nama</td><td>Warna Kesukaan</td><tr></table>"
+      );
+    </script>
+  </body>
+</html>

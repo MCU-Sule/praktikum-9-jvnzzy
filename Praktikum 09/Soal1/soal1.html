@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="Fabio 2172014" />
+    <title>Document</title>
+  </head>
+  <style>
+    div.bulet {
+      border-radius: 100%;
+      width: 50px;
+      height: 50px;
+      background-color: cornflowerblue;
+      float: left;
+      margin: auto;
+      text-align: center;
+    }
+    #semua {
+      margin: auto;
+    }
+  </style>
+  <body>
+    <script>
+      document.write("<div id='semua'>");
+      let inpt = parseInt(prompt("Berapa NxN bola yang ingin dibuat:"));
+      let k = inpt * inpt;
+      let width = 50;
+      for (let i = inpt; i > 0; i--) {
+        for (let j = k; j > 0; j--) {
+          k--;
+          if ((j < 10) & (inpt > 3)) {
+            document.write("<div class='bulet'>0" + j + "</div>");
+          } else {
+            document.write("<div class='bulet'>" + j + "</div>");
+          }
+        }
+        document.getElementById("semua").style.width = width * inpt + "px";
+      }
+      document.write("</div>");
+    </script>
+  </body>
+</html>
